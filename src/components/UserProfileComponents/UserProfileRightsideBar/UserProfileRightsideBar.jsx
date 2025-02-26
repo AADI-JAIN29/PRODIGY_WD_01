@@ -26,8 +26,8 @@ let UserProfileRightsideBar = () => {
 
     let data = [{
         imgSrc: ImgSrc,
-        title: "Paradise Biryani",
-        address: "Kukatpally, Hyd",
+        title: "Aadi da dhaba",
+        address: "Barara, Hr",
         stars: 5,
         days: 10,
         votes: 10,
@@ -38,8 +38,8 @@ let UserProfileRightsideBar = () => {
     },
     {
         imgSrc: ImgSrc,
-        title: "Paradise Biryani",
-        address: "Kukatpally, Hyd",
+        title: "Aadi da dhaba",
+        address: "Barara, HR",
         stars: 5,
         days: 10,
         votes: 10,
@@ -49,8 +49,8 @@ let UserProfileRightsideBar = () => {
         userId: userId,
     },{
         imgSrc: ImgSrc,
-        title: "Paradise Biryani",
-        address: "Kukatpally, Hyd",
+        title: "C3",
+        address: "Mullana, Ambala",
         stars: 5,
         days: 10,
         votes: 10,
@@ -60,7 +60,7 @@ let UserProfileRightsideBar = () => {
         userId: userId,
     },{
         imgSrc: ImgSrc,
-        title: "Paradise Biryani",
+        title: "Aadi da dhaba",
         address: "Kukatpally, Hyd",
         stars: 5,
         days: 10,

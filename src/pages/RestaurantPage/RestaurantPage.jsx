@@ -19,11 +19,11 @@ const RestaurantPage = () => {
             /
             India
             /
-            Hyderabad
+            Haryana
             /
-            Hyderabad City
+            Ambala City
             /
-            Indira Nagar
+            Mullana
         </div>
     </div>
     <HeroComponent />

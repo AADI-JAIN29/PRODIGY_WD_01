@@ -30,15 +30,15 @@ const User = () => {
     ];
 
     let data3 = [
-        {userId: 123, imgSrc:userImg, userName: "Koushil Mankali", reviews: 200, followers: "123"},
-        {userId: 123, imgSrc:userImg, userName: "Koushil Mankali", reviews: 200, followers: "123"},
-        {userId: 123, imgSrc:userImg, userName: "Koushil Mankali", reviews: 200, followers: "123"},
-        {userId: 123, imgSrc:userImg, userName: "Koushil Mankali", reviews: 200, followers: "123"}
+        {userId: 123, imgSrc:userImg, userName: "Aman Redhu", reviews: 200, followers: "123"},
+        {userId: 123, imgSrc:userImg, userName: "Abhishek Dhingra", reviews: 200, followers: "123"},
+        {userId: 123, imgSrc:userImg, userName: "Akshit Vats", reviews: 200, followers: "123"},
+        {userId: 123, imgSrc:userImg, userName: "Aadi Jain", reviews: 200, followers: "123"}
     ]
 
     let data4 = {
       profilePic: userImg,
-      userName: "Koushil",
+      userName: "Aman Redhu",
       reviews: 1,
       photos: 1,
       followers: 200

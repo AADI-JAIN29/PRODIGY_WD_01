@@ -184,7 +184,7 @@ let ShowCase = () => {
             proExtraB: false,
             off: "30",
             proExtra: "40",
-            name: "Paradise Hotel",
+            name: "Aadi da Dhaba",
             rating: '3.6',
             imgSrc: biryaniSCImg
         },
@@ -195,7 +195,7 @@ let ShowCase = () => {
             proExtraB: false,
             off: "30",
             proExtra: "40",
-            name: "Mangal Hotel",
+            name: "C3",
             rating: '2.6',
             imgSrc: biryaniSCImg2
         },
@@ -206,7 +206,7 @@ let ShowCase = () => {
             proExtraB: true,
             off: "30",
             proExtra: "40",
-            name: "Chapathi Hotel",
+            name: "Italian",
             rating: '4.6',
             imgSrc: chapathiImg
         },
@@ -217,7 +217,7 @@ let ShowCase = () => {
             proExtraB: false,
             off: "30",
             proExtra: "40",
-            name: "Fish Mandi Hotel",
+            name: "A1",
             rating: '4.9',
             imgSrc: fishImg
         },
@@ -228,7 +228,7 @@ let ShowCase = () => {
             proExtraB: true,
             off: "30",
             proExtra: "40",
-            name: "MangalCaptain Hotel",
+            name: "OBC Market",
             rating: '4.6',
             imgSrc: icecreamImg
         },
@@ -286,11 +286,11 @@ let ShowCase = () => {
                 /
                 India
                 /
-                Hyderabad
+                Haryana
                 /
-                Hyderabad City
+                Amabala City
                 /
-                Indira Nagar
+                Mullana
             </div>
         </div>
         <div className={css.showCaseDiv}>
@@ -346,7 +346,7 @@ let ShowCase = () => {
         <div className={css.innerDiv6}>
             <div className={css.w7}>
                 <div className={css.innerDiv6Title}>
-                    {page === orderOnlinePage ? "Delivery Restaurants in Gachibowli" : page === diningOutPage ? "Dine-Out Restaurants in Gachibowli" : "Nightlife Restaurants in Gachibowli"}
+                    {page === orderOnlinePage ? "Delivery Restaurants in Mullana" : page === diningOutPage ? "Dine-Out Restaurants in Mullana" : "Nightlife Restaurants in Mullana"}
                 </div>
                 <div className={css.innerDiv6Body}>
                     {items?.map((item, id) => {
