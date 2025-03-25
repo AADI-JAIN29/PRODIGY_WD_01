@@ -14,7 +14,7 @@ let PopularPlaces = () => {
             <PlacesCard place="Dhingra ki rasoi" count="421" link='/jubileehills' />
             <PlacesCard place="Vats Party Hall" count="421" link='/jubileehills' />
             <PlacesCard place="Redhu's Bar" count="421" link='/jubileehills' />
-            <PlacesCard place="Haveli" count="421" link='/jubileehills' />
+            <PlacesCard place="0Haveli" count="421" link='/jubileehills' />
             <ShowMore setShowMore={setShowMore} />
         </div>
     </div>

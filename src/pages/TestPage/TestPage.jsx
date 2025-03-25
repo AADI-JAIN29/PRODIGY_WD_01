@@ -46,7 +46,7 @@ const TestPage = () => {
   };
     const data = {
         phone: "9988098812",
-        address: "50000, kukatpally, Hyderabad, Telangane, India",
+        address: "Mullana, Haryana, India",
         lat: 11.11,
         lng: 18.31
     }
@@ -54,7 +54,7 @@ const TestPage = () => {
     let data2 = {
       imgSrc: profilepic,
       title: "Paradise Biryani",
-      address: "Kukatpally, Hyd",
+      address: "Ambala, Haryana, India",
       reviews: 0,
       followers: 0,
       stars: 3,

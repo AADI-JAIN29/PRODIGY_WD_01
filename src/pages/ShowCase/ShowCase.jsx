@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 import Collections from '../../components/HomeComponents/Collections/Collections';
 
@@ -186,7 +186,8 @@ let ShowCase = () => {
             proExtra: "40",
             name: "Aadi da Dhaba",
             rating: '3.6',
-            imgSrc: biryaniSCImg
+            imgSrc: chapathiImg,
+            path: "aadi-da-dhaba"
         },
         {
             promoted: false,
@@ -197,7 +198,8 @@ let ShowCase = () => {
             proExtra: "40",
             name: "C3",
             rating: '2.6',
-            imgSrc: biryaniSCImg2
+            imgSrc: pizzaSCImg,
+            path: "c3"
         },
         {
             promoted: true,
@@ -208,7 +210,8 @@ let ShowCase = () => {
             proExtra: "40",
             name: "Italian",
             rating: '4.6',
-            imgSrc: chapathiImg
+            imgSrc: chapathiImg,
+            path: "italian"
         },
         {
             promoted: false,
@@ -219,7 +222,7 @@ let ShowCase = () => {
             proExtra: "40",
             name: "A1",
             rating: '4.9',
-            imgSrc: fishImg
+            imgSrc: pizzaSCImg
         },
         {
             promoted: true,
@@ -261,9 +264,9 @@ let ShowCase = () => {
             proExtraB: false,
             off: "30",
             proExtra: "40",
-            name: "Fish Mandi Hotel",
+            name: "Pizza Hut",
             rating: '4.6',
-            imgSrc: fishImg
+            imgSrc: pizzaSCImg
         },
         {
             promoted: true,
@@ -343,17 +346,29 @@ let ShowCase = () => {
                 </div>
             </div>
         </div> : null}
-        <div className={css.innerDiv6}>
-            <div className={css.w7}>
-                <div className={css.innerDiv6Title}>
-                    {page === orderOnlinePage ? "Delivery Restaurants in Mullana" : page === diningOutPage ? "Dine-Out Restaurants in Mullana" : "Nightlife Restaurants in Mullana"}
-                </div>
-                <div className={css.innerDiv6Body}>
-                    {items?.map((item, id) => {
-                        return <ShowcaseCard key={id} promoted={item.promoted} time={item.time} offB={item.offB} proExtraB={item.proExtraB} off={item.off} proExtra={item.proExtra} name={item.name} rating={item.rating} imgSrc={item.imgSrc} />
-                    })}
-                </div>
-            </div>
+        <div className={css.restaurantGrid}>
+            {items.map((item, index) => (
+                <Link 
+                    to={`/hyderabad/${item.name.toLowerCase().replace(/\s+/g, '-')}/order`} 
+                    key={index}
+                >
+                    <div className={css.cardBox}>
+                        <ShowcaseCard 
+                            promoted={item.promoted} 
+                            time={item.time} 
+                            offB={item.offB} 
+                            proExtraB={item.proExtraB} 
+                            off={item.off} 
+                            proExtra={item.proExtra} 
+                            name={item.name} 
+                            rating={item.rating} 
+                            imgSrc={item.imgSrc} 
+                        />
+                        <div className={css.name}>{item.name}</div>
+                        <div className={css.rating}>{item.rating}</div>
+                    </div>
+                </Link>
+            ))}
         </div>
         <ExploreOptionsNearMe />
         <Footer />

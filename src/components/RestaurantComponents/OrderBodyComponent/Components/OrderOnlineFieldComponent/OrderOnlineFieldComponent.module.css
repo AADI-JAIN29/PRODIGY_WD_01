@@ -142,3 +142,52 @@
         flex-wrap: wrap;
     }
 }
+
+.cartSummaryContainer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    padding: 16px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.cartSummary {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.cartInfo {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.itemCount {
+    font-size: 14px;
+    color: #666;
+}
+
+.cartTotal {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.viewCartBtn {
+    padding: 8px 24px;
+    background-color: rgb(237, 90, 107);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.viewCartBtn:hover {
+    background-color: rgb(220, 80, 95);
+}

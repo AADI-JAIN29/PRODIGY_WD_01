@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
+import { useCart } from '../../../context/CartContext';
 
 import mobileHand from '/icons/smartphone.png'
 import menuBar from '/icons/menu.png'
@@ -19,6 +20,8 @@ let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
         login: false,
         signup: false
     });
+    const { cartItems } = useCart();
+    const totalItems = cartItems.length;
 
     const logoutHandler = () => {
         setLoggedIn(false);
@@ -33,6 +36,14 @@ let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
                 <Link to='/get-the-app' className={css.appTxt}>Get The App</Link>
             </div>
             <div className={css.rightSide}>
+                <Link to="/cart" className={css.cartLink}>
+                    <div className={css.cartButton}>
+                        <span>🛒 Cart</span>
+                        {totalItems > 0 && (
+                            <span className={css.cartBadge}>{totalItems}</span>
+                        )}
+                    </div>
+                </Link>
                 {page !== 'add-restaurant' ? <Link to='/add-restaurant' className={css.menuItem} >Add restuarant</Link> : ''}
                 {loggedIn ? (<div className={css.menuItem}>
                     <div className={css.profile} onClick={() => setMenuDisplay(val => !val)}>

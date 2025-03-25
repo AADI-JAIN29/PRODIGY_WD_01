@@ -1,12 +1,4 @@
-# Tomato (zomato clone)
 
-**Live App Demo Link:** [Zomato Clone Live App Demo](https://zomatoclone.koushilmankali.in/)
-
-Zomato is a online food ordering application, we made a clone (Tomato) of it using React Js, Zomato Frontend clone using React Js.
-
-### Project Demonistration Video: 
-
-[![Zomato clone demonistration video](https://img.youtube.com/vi/lNfS_8bJA5c/0.jpg)](https://www.youtube.com/watch?v=lNfS_8bJA5c)
 
 ## Pages Developed:
 
@@ -46,33 +38,3 @@ Zomato is a online food ordering application, we made a clone (Tomato) of it usi
 1. yarn
 2. yarn run dev
 
-## ScreenShots
-
-# Home Page:
-
-<img src="Project Images/Home.png" />
-
-
-# Add Restaurant Page:
-
-<img src="Project Images/AddRestaurant.png" />
-
-
-# Order Online Page:
-
-<img src="Project Images/OrderOnlinePage.png" />
-
-
-# User Profile Page:
-
-<img src="Project Images/UserProfilePage.png" />
-
-
-# Hotel Order Page:
-
-<img src="Project Images/HotelOrderPage.png" />
-
-
-### Project Started Date: june, 11, 2022
-
-### Project Completed Date: july 19, 2022

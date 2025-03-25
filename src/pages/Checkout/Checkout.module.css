@@ -1,0 +1,93 @@
+.checkoutContainer {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+}
+
+.orderSummary {
+  background: var(--bg-white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow3);
+  height: fit-content;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.total {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--border-color);
+}
+
+.paymentForm {
+  background: var(--bg-white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow3);
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-title-text);
+  font-weight: 500;
+}
+
+.paymentMethods {
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.paymentOption {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.cardDetails {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+.payButton {
+  width: 100%;
+  padding: 1rem;
+  background: var(--bg-blueish4);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.payButton:hover {
+  background-color: var(--bg-blueish5);
+} 

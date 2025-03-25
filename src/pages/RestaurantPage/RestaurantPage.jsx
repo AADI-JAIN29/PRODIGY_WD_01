@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import { useParams, useLocation } from 'react-router-dom'
 
 import css from './RestaurantPage.module.css'
 
@@ -10,6 +11,19 @@ import OrderBodyComponent from '../../components/RestaurantComponents/OrderBodyC
 import Footer from '../../components/Footer/Footer'
 
 const RestaurantPage = () => {
+  const location = useLocation();
+  const { city, hotel } = useParams();
+  
+  console.log("URL params:", { city, hotel });
+  
+  const restaurantName = hotel ? 
+    hotel
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ')
+    : "Aadi da Dhaba";
+
+  console.log("Formatted restaurant name:", restaurantName);
 
   return <div className={css.outerDiv}>
     <NavigationBar />
@@ -23,13 +37,13 @@ const RestaurantPage = () => {
             /
             Ambala City
             /
-            Mullana
+            {restaurantName}
         </div>
     </div>
     <HeroComponent />
     <div className={css.innerDiv2}>
-      <OrderTitleComponent />
-      <OrderBodyComponent />
+      <OrderTitleComponent restaurantName={restaurantName} />
+      <OrderBodyComponent restaurantName={restaurantName} />
     </div>
     <Footer />
   </div>

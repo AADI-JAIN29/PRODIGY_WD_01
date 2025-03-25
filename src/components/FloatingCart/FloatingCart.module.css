@@ -1,0 +1,39 @@
+.floatingCart {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(237, 90, 107);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.cartSummary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.divider {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.viewCartButton {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.viewCartButton:hover {
+    background: rgba(255, 255, 255, 0.1);
+} 

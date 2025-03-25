@@ -26,22 +26,22 @@ const OrderBodyComponent = () => {
     useEffect(()=> {
         switch(`/${city}/${hotel}/${page}`){
             case `/${city}/${hotel}/`:
-                setPageComp(<OverviewFieldComponent />);
+                setPageComp(<OverviewFieldComponent restaurantName={hotel} />);
                 break;
             case `/${city}/${hotel}/order`:
-                setPageComp(<OrderOnlineFieldComponent />);
+                setPageComp(<OrderOnlineFieldComponent restaurantName={hotel} />);
                 break;
             case `/${city}/${hotel}/reviews`:
-                setPageComp(<ReviewsComponent />);
+                setPageComp(<ReviewsComponent restaurantName={hotel} />);
                 break;
             case `/${city}/${hotel}/photos`:
-                setPageComp(<PhotosComponent />);
+                setPageComp(<PhotosComponent restaurantName={hotel} />);
                 break;
             case `/${city}/${hotel}/menu`:
-                setPageComp(<MenuComponent />);
+                setPageComp(<MenuComponent restaurantName={hotel} />);
                 break;
             default: 
-                setPageComp(<OverviewFieldComponent />);
+                setPageComp(<OverviewFieldComponent restaurantName={hotel} />);
         }
     }, [city, hotel, page])
 
