@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 ## Pages Developed:
@@ -38,3 +39,8 @@
 1. yarn
 2. yarn run dev
 
+=======
+# PRODIGY_WD_01
+This project is about online food ordering built using html,css and javascript.
+The site allows users to browse menus, place orders, and experience a seamless food delivery process. Check it out to see intuitive design and smooth user interaction!
+>>>>>>> 5fc7098968bcd8a26a418ed30452c8fd45dba77c
